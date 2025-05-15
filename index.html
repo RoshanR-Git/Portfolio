@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roshan R - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="profile photo.jpg" alt="Roshan R" class="profile-pic" />
+    <div class="intro-text">
+      <h1>Roshan R</h1>
+      <p>Aspiring Software Developer & Data Analyst</p>
+    </div>
+  </div>
+
+  <nav class="sticky-nav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="Roshan_R Resume.pdf" download class="download-btn">Download Resume</a>
+</header>
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    Aspiring Software Developer and Data Analyst with practical knowledge in Java, Python, HTML, CSS, and JavaScript.
+    Skilled in implementation of Predictive Analysis of ML Algorithms, utilizing version control systems, and performing data-driven analysis with a
+    strong emphasis on collaboration and solution-oriented thinking.
+  </p>
+</section>
+
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.E., Electronics and Communication Engineering</strong> (Expected May 2026)  
+    Saveetha Engineering College, Chennai — CGPA: 8.65</li>
+    <li><strong>Higher Secondary (12th)</strong> — Sivanthi Matriculation Higher Secondary School, Chennai — 90.5%</li>
+    <li><strong>High School (10th)</strong> — Sivanthi Matriculation Higher Secondary School, Chennai — 98.8%</li>
+  </ul>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Programming Languages:</strong> Java, Python, C</li>
+    <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Database Management:</strong> DBMS</li>
+    <li><strong>Data Science:</strong> Predictive Analysis</li>
+    <li><strong>Version Control:</strong> Git, GitHub</li>
+    <li><strong>Tools:</strong> VS Code, Google Colab, Jupyter Notebook</li>
+    <li><strong>Soft Skills:</strong> Adaptability, Decision Making, Team Management, Collaboration</li>
+  </ul>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div>
+    <h3>Diabetes Predictor Chatbot</h3>
+    <p>Designed a chatbot to predict diabetes risk using SVM classification. Enabled user interaction for real-time health prediction.</p>
+  </div>
+  <div>
+    <h3>Mental Health MedAI</h3>
+    <p>Created a tool to detect stress levels and suggest coping strategies. Applied Random Forest Classifier Algorithm for real-time prediction.</p>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <p><strong>Intern, Arjun Vision Tech Solutions Pvt Ltd (NSIC), Chennai, India</strong></p>
+  <ul>
+    <li>Worked as a Frontend Developer Intern, creating responsive web pages using HTML, CSS, and JavaScript.</li>
+    <li>Formed a team of three and created a Tourist Guider Website.</li>
+  </ul>
+</section>
+
+<section id="certifications" class="reveal">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Intro to UI/UX Design — Jan 2024</li>
+    <li>Dynamic Public Speaking — Aug 2024</li>
+    <li>Cloud Computing (NPTEL) — Apr 2024</li>
+    <li>Introduction to Internet of Things (NPTEL) — Oct 2023</li>
+  </ul>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:rroshan200431@gmail.com">rroshan200431@gmail.com</a></p>
+  <p class="contact-links">
+    <a href="https://www.linkedin.com/in/roshan-rlink" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/RoshanR-Git" target="_blank">GitHub</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Roshan R — Chennai, India</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (elementTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+</body>
+</html>
