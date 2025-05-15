@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website, built using HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
-👉 [View My Portfolio](https://<RoshanR-Git>.github.io/portfolio/)
+👉 [View My Portfolio](https://roshanr-git.github.io/Portfolio/)
 
 ## 📂 About
 This portfolio showcases:
